@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="438.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fjb.contactbook.controller.ContactDetailController">
+    <children>
+        <Text layoutX="231.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact Details" textAlignment="CENTER" AnchorPane.bottomAnchor="618.66796875" AnchorPane.leftAnchor="231.0" AnchorPane.rightAnchor="230.28515625" AnchorPane.topAnchor="28.99609375">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Text>
+        <Text layoutX="47.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" AnchorPane.leftAnchor="50.0" />
+        <Text layoutX="47.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number:" AnchorPane.leftAnchor="50.0" />
+        <Text layoutX="47.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" AnchorPane.leftAnchor="50.0" />
+        <Text fx:id="nameText" layoutX="156.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+        <Text fx:id="phoneText" layoutX="156.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+        <Text fx:id="emailText" layoutX="156.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+        <Button fx:id="deleteButton" layoutX="59.0" layoutY="226.0" minHeight="30.0" minWidth="70.0" mnemonicParsing="false" onAction="#onDeleteButtonClicked" style="-fx-background-color: red;" text="Delete" textFill="WHITE" AnchorPane.leftAnchor="50.0" />
+        <Button fx:id="editButton" layoutX="156.0" layoutY="226.0" minHeight="30.0" minWidth="70.0" mnemonicParsing="false" onAction="#onEditButtonClicked" style="-fx-background-color: cyan;" text="Edit" />
+    </children>
+</AnchorPane>
